@@ -19,6 +19,3 @@ def crete_datebase(app):
 # Flask App
 app = create_app()
 
-# MySql Database 
-db = crete_datebase(app)
-# db.create_all()
