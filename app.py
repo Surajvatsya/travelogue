@@ -1,13 +1,14 @@
 from flask import render_template
-from create_app import create_app
-
-app = create_app()
+from app_config import app, db
+from modals import City
 
 @app.route('/')
-def hello_world():
+def index():
+    new_city = City("Kolkata", "Best in the world", "rajgir image")
+    db.session.add(new_city)
+    db.session.commit()
     return render_template("index.html")
+
 
 if __name__ == '__main__':
     app.run(debug=True)
-
-
