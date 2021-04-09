@@ -1,0 +1,18 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kiwi+Maru:wght@300&display=swap');
+
+.container .row .one .card{
+  cursor: pointer;
+}
+.container .row .one .card img{
+  max-height: 180px;
+}
+
+h5{
+  font-family: 'Ubuntu', sans-serif;
+  font-weight: bold;
+}
+p{
+  font-family: 'Kiwi Maru', serif;
+  font-weight: bold;
+}
